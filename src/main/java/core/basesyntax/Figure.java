@@ -1,8 +1,7 @@
 package core.basesyntax;
 
-public abstract class Figure implements Drawable {
+public abstract class Figure implements Drawable,HaveArea {
     private String color;
-    private double area;
 
     public String getColor() {
         return color;
@@ -10,14 +9,6 @@ public abstract class Figure implements Drawable {
 
     public void setColor(String color) {
         this.color = color;
-    }
-
-    public double getArea() {
-        return area;
-    }
-
-    public void setArea(double area) {
-        this.area = area;
     }
 
 }
