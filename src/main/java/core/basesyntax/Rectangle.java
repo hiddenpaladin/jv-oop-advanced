@@ -8,7 +8,6 @@ public class Rectangle extends Figure {
         setColor(color);
         this.width = width;
         this.length = length;
-        setArea(width * length);
     }
 
     public int getWidth() {
@@ -25,6 +24,11 @@ public class Rectangle extends Figure {
 
     public void setLength(int length) {
         this.length = length;
+    }
+
+    @Override
+    public double getArea() {
+        return (width * length);
     }
 
     @Override

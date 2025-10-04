@@ -6,7 +6,6 @@ public class Circle extends Figure {
     public Circle(String color, int radius) {
         setColor(color);
         this.radius = radius;
-        setArea(Math.PI * Math.pow(radius, 2));
     }
 
     public int getRadius() {
@@ -15,6 +14,11 @@ public class Circle extends Figure {
 
     public void setRadius(int radius) {
         this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return (Math.PI * Math.pow(radius, 2));
     }
 
     @Override

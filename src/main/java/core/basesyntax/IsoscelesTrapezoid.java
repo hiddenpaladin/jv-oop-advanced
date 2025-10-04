@@ -11,8 +11,7 @@ public class IsoscelesTrapezoid extends Figure {
         this.baseDown = baseDown;
         this.baseUp = baseUp;
         this.leg = leg;
-        this.height = Math.sqrt(Math.pow(leg, 2) - Math.pow((baseDown - baseUp) / 2, 2));
-        setArea(((baseUp + baseDown) / 2) * 2);
+        this.height = Math.sqrt(Math.pow(leg, 2) - Math.pow((baseDown - baseUp) / 2.0, 2));
     }
 
     public int getBaseUp() {
@@ -45,6 +44,11 @@ public class IsoscelesTrapezoid extends Figure {
 
     public void setHeight(double height) {
         this.height = height;
+    }
+
+    @Override
+    public double getArea() {
+        return (((baseUp + baseDown) / 2.0) * height);
     }
 
     @Override
