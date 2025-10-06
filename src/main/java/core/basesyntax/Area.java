@@ -1,5 +1,4 @@
 package core.basesyntax;
-
-public interface HaveArea {
+public interface Area {
     public double getArea();
 }
