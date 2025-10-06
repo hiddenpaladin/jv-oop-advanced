@@ -11,15 +11,11 @@ public class Circle extends Figure implements Drawable,Area {
     public void setRadius(int radius) {
         this.radius = radius;
     }
-    @Override
-    public double getArea() {
-        return (Math.PI * Math.pow(radius, 2));
-    }
-    @Override
-    public double getArea() {
-        return (Math.PI * Math.pow(radius, 2));
-    }
 
+    @Override
+    public double getArea() {
+        return (Math.PI * Math.pow(radius, 2));
+    }
     @Override
     public void draw() {
         System.out.println("Figure: " + "circle, " + "area: " + getArea()

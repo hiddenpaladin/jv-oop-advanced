@@ -15,10 +15,6 @@ public class Square extends Figure implements Drawable,Area {
     public double getArea() {
         return (Math.pow(side, 2));
     }
-    @Override
-    public double getArea() {
-        return (Math.pow(side, 2));
-    }
 
     @Override
     public void draw() {

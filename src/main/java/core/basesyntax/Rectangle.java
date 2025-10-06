@@ -23,10 +23,6 @@ public class Rectangle extends Figure implements Drawable,Area {
     public double getArea() {
         return (width * length);
     }
-    @Override
-    public double getArea() {
-        return (width * length);
-    }
 
     @Override
     public void draw() {

@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class RightTriangle extends Figure {
+public class RightTriangle extends Figure implements Drawable,Area {
     private int leg;
     private int base;
 
@@ -8,7 +8,6 @@ public class RightTriangle extends Figure {
         setColor(color);
         this.leg = leg;
         this.base = base;
-        setArea((base * leg) / 2);
     }
 
     public int getLeg() {
@@ -26,7 +25,10 @@ public class RightTriangle extends Figure {
     public void setBase(int base) {
         this.base = base;
     }
-
+    @Override
+    public double getArea() {
+        return (base * leg) / 2.0;
+    }
     @Override
     public void draw() {
         System.out.println("Figure: " + "rightTriangle, " + "area: " + getArea()

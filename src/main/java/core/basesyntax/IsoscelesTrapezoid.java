@@ -39,10 +39,6 @@ public class IsoscelesTrapezoid extends Figure implements Drawable,Area {
     public double getArea() {
         return (((baseUp + baseDown) / 2.0) * height);
     }
-    @Override
-    public double getArea() {
-        return (((baseUp + baseDown) / 2.0) * height);
-    }
 
     @Override
     public void draw() {
