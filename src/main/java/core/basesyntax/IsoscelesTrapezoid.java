@@ -40,6 +40,11 @@ public class IsoscelesTrapezoid extends Figure implements Drawable,Area {
         return (((baseUp + baseDown) / 2.0) * height);
     }
     @Override
+    public double getArea() {
+        return (((baseUp + baseDown) / 2.0) * height);
+    }
+
+    @Override
     public void draw() {
         System.out.println("Figure: " + "isosceles trapezoid, " + "area: " + getArea()
                 + " sq. units, " + "baseDown: " + baseDown + " units, " + "baseUp: "

@@ -1,33 +1,37 @@
 package core.basesyntax;
-public class RightTriangle extends Figure implements Drawable,Area {
-    private int firstLeg;
-    private int secondLeg;
-    public RightTriangle(String color, int firstLeg, int secondLeg) {
+
+public class RightTriangle extends Figure {
+    private int leg;
+    private int base;
+
+    public RightTriangle(String color, int base, int leg) {
         setColor(color);
-        this.firstLeg = firstLeg;
-        this.secondLeg = secondLeg;
+        this.leg = leg;
+        this.base = base;
+        setArea((base * leg) / 2);
     }
-    public int getFirstLeg() {
-        return firstLeg;
+
+    public int getLeg() {
+        return leg;
     }
+
     public void setLeg(int leg) {
-        this.firstLeg = leg;
+        this.leg = leg;
     }
-    public int getSecondLeg() {
-        return secondLeg;
+
+    public int getBase() {
+        return base;
     }
-    public void setSecondLeg(int secondLeg) {
-        this.secondLeg = secondLeg;
+
+    public void setBase(int base) {
+        this.base = base;
     }
-    @Override
-    public double getArea() {
-        return ((secondLeg * firstLeg) / 2.0);
-    }
+
     @Override
     public void draw() {
         System.out.println("Figure: " + "rightTriangle, " + "area: " + getArea()
-                + " sq. units, " + "firstLeg: " + firstLeg + " units, " + "secondLeg: "
-                + secondLeg + " units, " + "color: " + getColor());
+                + " sq. units, " + "leg: " + leg + " units, " + "base: "
+                + base + " units, " + "color: " + getColor());
 
     }
 }

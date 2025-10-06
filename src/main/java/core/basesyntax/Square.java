@@ -16,6 +16,11 @@ public class Square extends Figure implements Drawable,Area {
         return (Math.pow(side, 2));
     }
     @Override
+    public double getArea() {
+        return (Math.pow(side, 2));
+    }
+
+    @Override
     public void draw() {
         System.out.println("Figure: " + "square, " + "area: " + getArea()
                 + " sq. units, " + "side: " + side + " units, " + "color: " + getColor());
